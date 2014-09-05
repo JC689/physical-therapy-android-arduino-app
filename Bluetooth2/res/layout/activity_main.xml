@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/btn_OFF" />
+
+    <Button
+        android:id="@+id/btnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnOff"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_ON" />
+
+    <TextView
+        android:id="@+id/txtArduino"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/analog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtArduino"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="33dp"
+        android:text="analog1" />
+
+    <TextView
+        android:id="@+id/analog2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/analog"
+        android:layout_below="@+id/analog"
+        android:layout_marginTop="18dp"
+        android:text="analog2" />
+
+    <TextView
+        android:id="@+id/analog3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnOn"
+        android:layout_alignRight="@+id/analog"
+        android:layout_marginBottom="18dp"
+        android:text="analog3" />
+
+    <TextView
+        android:id="@+id/analog4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/analog2"
+        android:layout_alignTop="@+id/btnOn"
+        android:text="analog4" />
+
+    <TextView
+        android:id="@+id/analog5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnOff"
+        android:layout_alignLeft="@+id/analog4"
+        android:text="analog5" />
+
+    <TextView
+        android:id="@+id/analog6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnOff"
+        android:layout_alignBottom="@+id/btnOff"
+        android:layout_alignLeft="@+id/analog5"
+        android:text="analog6" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnOn"
+        android:layout_below="@+id/btnOff"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="53dp"
+        android:onClick="sendMessage"
+        android:text="@string/button_send" />
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+        android:onClick="graphDisplay"
+        android:text="@string/button_graph" />
+	-->
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/analog"
+        android:layout_alignBottom="@+id/analog"
+        android:layout_alignRight="@+id/btnOn"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/tgOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/analog3"
+        android:layout_alignRight="@+id/connect"
+        android:text="ToggleButton" />
+
+</RelativeLayout>
